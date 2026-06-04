@@ -1,0 +1,13 @@
+{
+  "name": "inventory-express",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"bun run --cwd client dev\" \"bun run --cwd server dev\"",
+    "build": "bun run --cwd client build",
+    "install:all": "bun install && bun install --cwd client && bun install --cwd server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
